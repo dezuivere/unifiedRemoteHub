@@ -1,0 +1,91 @@
+
+.timer-card,
+.audio-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  background-color: #fff;
+  background-image: linear-gradient(#e7e1f3, rgb(255, 255, 255));
+  border-radius: 15px;
+}
+
+.timer-card h2,
+.audio-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.timer-card .timer {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.timer-card .actions,
+.audio-card div {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+/* Adjust as needed based on your design preferences */
+.timer-card button {
+    background-color: #847af1;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .timer-card button:hover {
+    background-color: #270968;
+  }
+  
+  /* AudioCard Styles */
+  .audio-card button {
+    background-color:#56b2fd;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .audio-card button:hover {
+    background-color: #270968;
+  }
+  
+  .bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #56b2fd 50%, #2011f6 30%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+    height: 100%;
+  }
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+  }
+  
+  .bg3 {
+    animation-duration:5s;
+  }
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }

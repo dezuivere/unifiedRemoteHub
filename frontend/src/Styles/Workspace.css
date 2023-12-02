@@ -1,0 +1,70 @@
+/* Workspace.css */
+nav {
+  display: flex;
+  justify-content: space-between; /* Space items evenly between the container */
+  align-items: center; /* Align items vertically center */
+  background-color: #975abd; /* Purple background color */
+  padding: 20px;
+  color: #ffffff; /* White text color */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: flex-start; /* Align items to the start of the container */
+}
+
+li {
+  margin-bottom: 10px; /* Add margin between items for spacing */
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff; /* White text color for links */
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Styling for the right side image */
+.image-container img {
+  width: 400px; /* Adjust the width as needed */
+  height: auto;
+}
+
+.Thecard .border-primary {
+  background-color: #ffffff;
+}
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, rgb(150, 101, 248) 50%, #2011f6 30%);
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+  height: 100%;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}

@@ -1,0 +1,68 @@
+
+.card-text {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .card {
+    border: 1px solid #ddd;
+    padding: 10%;
+    gap: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    background-image: linear-gradient(#8e56fd, white);
+    transition: transform 0.4s ease;
+    margin: 20px 0; /* Add margin for space above and below the cards */
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  .text-container {
+    text-align: left; /* Left-align the text */
+    padding: 20px; /* Add padding for better readability, adjust as needed */
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    color: rgb(245, 244, 244); /* Set text color to white or any desired color */
+        
+  }
+  
+  .text-container h1 {
+    margin-bottom: 10px;
+    color:rgb(10, 18, 24); /* Add margin below the heading, adjust as needed */
+  }
+  .ms-2{
+
+    color: #ddd;
+  }
+  .bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, rgb(150, 101, 248) 50%, #2011f6 30%);
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+    height: 100%;
+  }
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+  }
+  
+  .bg3 {
+    animation-duration:5s;
+  }
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
